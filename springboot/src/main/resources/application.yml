@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/water
+    username: root
+    password: qinyun
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    show-sql: true
+server:
+  port: 8081
