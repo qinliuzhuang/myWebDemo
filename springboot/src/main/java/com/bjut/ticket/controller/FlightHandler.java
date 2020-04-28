@@ -1,7 +1,7 @@
 package com.bjut.ticket.controller;
 
-import com.bjut.ticket.Entity.account;
-import com.bjut.ticket.repository.AccountRepository;
+import com.bjut.ticket.Entity.flight;
+import com.bjut.ticket.repository.FlightRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,11 +11,11 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/Result")
-public class AccoutHandler {
+public class FlightHandler {
     @Autowired
-    private AccountRepository accountRepository;
+    private FlightRepository flightRepository;
     @GetMapping("/findAll")
-    public List<account> findall(){
-        return accountRepository.findAll();
+    public List<flight> findall(){
+        return flightRepository.findAll();
     }
 }

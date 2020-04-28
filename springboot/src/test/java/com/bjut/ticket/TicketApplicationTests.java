@@ -1,6 +1,6 @@
 package com.bjut.ticket;
 
-import com.bjut.ticket.repository.AccountRepository;
+import com.bjut.ticket.repository.FlightRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -8,10 +8,10 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
 class TicketApplicationTests {
     @Autowired
-    private AccountRepository accountRepository;
+    private FlightRepository flightRepository;
     @Test
     void finAll() {
-        System.out.println(accountRepository.findAll());
+        System.out.println(flightRepository.findAll());
     }
 
 }

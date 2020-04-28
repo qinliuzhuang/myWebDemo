@@ -2,11 +2,11 @@
     <div id="app">
         <div id="nav">
             <router-link to="/">
-                <button>首页</button>
+                <el-button>首页</el-button>
             </router-link>
             |
             <router-link to="/Result">
-                <button>结果</button>
+                <el-button>结果</el-button>
             </router-link>
         </div>
         <router-view/>
